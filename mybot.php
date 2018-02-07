@@ -14,25 +14,32 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-			if($text == 'hello'){
+			if($text == 'สวัสดีครัชคนสวย'){
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => 'สวัสดีคนสวย'
+					'text' => 'จ้าา'
 				];
 			}
-			else if($text == 'test'){
+			else if($text == 'คิดถึงจัง'){
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => 'คิดถึง'
+					'text' => 'บ้าหราา'
 				];
 			}
-			else if($text == 'hi'){
+			else if($text == 'สวยๆแบบนี้มีแฟนยัง'){
 				// Build message to reply back
 				$messages = [
 					'type' => 'text',
-					'text' => 'ทำไรอยูหรอ'
+					'text' => 'เหงาจัง'
+				];
+			}
+			else if($text == 'รักนะ'){
+				// Build message to reply back
+				$messages = [
+					'type' => 'text',
+					'text' => 'ร๊ากก'
 				];
 			}
 		
