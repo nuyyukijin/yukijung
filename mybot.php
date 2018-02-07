@@ -28,6 +28,12 @@ if (!is_null($events['events'])) {
 					'text' => 'คิดถึง'
 				];
 			}
+			else if($text == 'text'){
+				// Build message to reply back
+				$messages = [
+					'type' => 'text',
+					'text' => 'ทำไรอยูหรอ'
+				];
 		
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
